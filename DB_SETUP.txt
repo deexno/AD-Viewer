@@ -1,0 +1,36 @@
+CREATE TABLE NODES (
+    id INT(128) NOT NULL UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(80) NOT NULL,
+    type VARCHAR(80) NOT NULL,
+    child_amount INT(128) AFTER type,
+    active INT(128) AFTER import_key,
+    parent_name VARCHAR(200),
+    color VARCHAR(200),
+    admin_count int(8),
+    account_name VARCHAR(100),
+    main_mail VARCHAR(100),
+    all_mail VARCHAR(800),
+    mobile VARCHAR(100),
+    telephone_nr VARCHAR(100),
+    department VARCHAR(100),
+    manager VARCHAR(100),
+    country VARCHAR(100),
+    country_code VARCHAR(100),
+    postal_code VARCHAR(8),
+    last_logoff VARCHAR(100),
+    last_logon VARCHAR(100),
+    logon_count VARCHAR(8),
+    bad_password_time VARCHAR(100),
+    last_change VARCHAR(100),
+    created VARCHAR(100)
+);
+
+CREATE TABLE EDGES (
+    id INT(128) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    child_amount INT(128),
+    source INT(128) NOT NULL,
+    target INT(128) NOT NULL,
+    display_type VARCHAR(8),
+    FOREIGN KEY (source) REFERENCES NODES(id),
+    FOREIGN KEY (target) REFERENCES NODES(id)
+);
