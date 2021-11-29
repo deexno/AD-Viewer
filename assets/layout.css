@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #233356;
+
+}
+
+p {
+
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin: 30px 0 20px 0;
+    padding: 0 0 0 0;
+
+}
+
+h3 {
+
+    font-size: 40px;
+    margin: 0 0 0 0;
+    padding: 0 0 25px 0;
+    color: white;
+
+}
+
+h6 {
+
+    color: white;
+    margin: 0;
+    padding: 0;
+
+}
+
+button, input {
+
+    width: 30%;
+    height: 35px;
+    text-align: center;
+    margin: 0 0 8px 0;
+    padding: 0 0 0 0;
+    color: #ffffff;
+
+}
+
+input {
+
+    border-width: 0 0 2px 0;
+    border-color: #A3AABB;
+    background-color: #162544;
+    transition-duration: 2s;
+    border-radius: 4px 4px 0 0;
+
+}
+
+input:hover {
+
+    border-color: #29BAA6;
+
+}
+
+button {
+
+    background-color: #29BAA6;
+    border-width: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    transition-duration: 1s;
+
+}
+
+button:hover {
+
+    background-color: #E1332B;
+
+}
+
+.login {
+
+    width: 50%;
+    height: 450px;
+    margin: 300px 25% 0 25%;
+    text-align: center;
+
+}
+
+.login input, button {
+
+    margin: 3px 0 3px 0;
+
+}
+
+.control_panel {
+
+    min-height: 180px;
+    width: 96%;
+    margin: 0 2% 0 2%;
+
+}
+
+.control_panel button, input{
+
+    margin: 0 0.4% 0 0.4%;
+
+}
+
+.search_items {
+
+    float: left;
+    width: 50%;
+
+}
+
+.filter_reset {
+
+    float: right;
+    width: 50%;
+
+}
+
+.filter_reset button {
+
+    float: right;
+
+}
+
+.main {
+
+    width: 96%;
+    margin: 0 2% 0 2%;
+
+}
+
+.layout_menu {
+
+    margin: 0 0 10px 0;
+
+}
+
+.node_info {
+
+    width: 16%;
+    height: 720px;
+    background-color: #465473;
+    border-radius: 5px;
+    color: white;
+    float: right;
+    text-align: center;
+
+}
+
+.node_info h2 {
+
+    padding: 5%;
+    font-size: 20px;
+
+}
+
+.node_info h3 {
+
+    padding: 5%;
+    font-size: 14px;
+    margin: 0 0 5px 0;
+    padding: 0 0 0 0;
+
+}
+
+::placeholder {
+    color: #A3AABB;
+}
+
+:-ms-input-placeholder {
+    color: #A3AABB;
+}
+  
+::-ms-input-placeholder {
+    color: #A3AABB;
+}
