@@ -8,7 +8,7 @@ import re
 
 # Initialising all necessary variables from the config.ini file
 config = configparser.ConfigParser()
-config.readfp(codecs.open("../config.ini", "r", "utf8"))
+config.readfp(codecs.open("config.ini", "r", "utf8"))
 
 ad_server = config['AD_INFO']['server']
 ad_domain = config['AD_INFO']['domain']
