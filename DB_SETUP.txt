@@ -1,12 +1,16 @@
+CREATE DATABASE ADV;
+
+USE ADV;
+
 CREATE TABLE NODES (
-    id INT(128) NOT NULL UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    id INT(128) NOT NULL AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(80) NOT NULL,
     type VARCHAR(80) NOT NULL,
-    child_amount INT(128) AFTER type,
-    active INT(128) AFTER import_key,
+    child_amount INT(128),
+    active INT(128),
     parent_name VARCHAR(200),
     color VARCHAR(200),
-    admin_count int(8),
+    admin_count VARCHAR(8),
     account_name VARCHAR(100),
     main_mail VARCHAR(100),
     all_mail VARCHAR(800),
