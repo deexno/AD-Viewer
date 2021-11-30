@@ -11,5 +11,5 @@ This tool is designed to help administrators get an overview of their Active Dir
 ## THE INSTALLATION OF THE ADV
 1. curl https://raw.githubusercontent.com/deexno/ACTIVE-DIRECTORY-VIEWER/main/Dockerfile -o Dockerfile
 2. Change the Dockerfile to your specific configuration.
-3. docker image build -f Dockerfile . -t adv
+3. docker image build -f Dockerfile . -t adv --no-cache=true
 4. docker container run -p 65535:65535 -d adv
