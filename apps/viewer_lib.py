@@ -45,7 +45,7 @@ def item_ini(node_selection, display_type):
                     {
                         'id': node_id, 
                         'name': node["name"], 
-                        'size': node["child_amount"] * 3, 
+                        'size': 100, 
                         'color': node["color"],
                         'admin count': node["admin_count"],
                         'country': node["country"],
@@ -133,7 +133,7 @@ def family_lookup(node_id, dir, parent_nodes, parent_edges, nodes_by_id):
                     {
                         'id': source_node_id, 
                         'name': source_node["name"], 
-                        'size': source_node["child_amount"] * 3, 
+                        'size': 100, 
                         'color': source_node["color"],
                         'admin count': source_node["admin_count"],
                         'country': source_node["country"],
@@ -159,7 +159,7 @@ def family_lookup(node_id, dir, parent_nodes, parent_edges, nodes_by_id):
                     {
                         'id': target_node_id, 
                         'name': target_node["name"], 
-                        'size': target_node["child_amount"], 
+                        'size': 100, 
                         'color': target_node["color"],
                         'admin count': target_node["admin_count"],
                         'country': target_node["country"],
